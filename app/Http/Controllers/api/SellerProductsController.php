@@ -26,7 +26,7 @@ class SellerProductsController extends Controller
 
     /* public function store(ProductRequest $request) */
     public function store(Request $request)
-    {
+    {     
          $res = Product::create_new($request);
          return $res;   
     }

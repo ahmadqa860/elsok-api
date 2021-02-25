@@ -4,6 +4,9 @@ use Illuminate\Auth\TokenGuard;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::post('login', 'API\UserController@login');
 Route::post('register', 'API\UserController@register');
