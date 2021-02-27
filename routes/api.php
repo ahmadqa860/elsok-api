@@ -8,8 +8,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('login', 'API\UserController@login');
-Route::post('register', 'API\UserController@register');
+Route::post('login', 'api\UserController@login');
+Route::post('register', 'api\UserController@register');
 
 Route::group(['middleware' => 'auth:api'], function () {
 
