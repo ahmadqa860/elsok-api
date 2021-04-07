@@ -30,5 +30,7 @@ Route::group(['middleware' => 'auth:api'], function () {
 Route::get('shop/products', 'api\ProductsController@getProducts');
 Route::get('shop/products/{id}', 'api\ProductsController@getProductDetails');
 Route::get('shop/productContact/{id}','api\ProductsController@getProductContactDetails');
-Route::get('categories','api\CategoriesController@getCategories');
 Route::get('shop/{categoryUrl}', 'api\CategoriesController@getCategoryProducts');
+
+Route::get('categories','api\CategoriesController@getCategories');
+Route::get('cities','api\CitiesController@getCities');

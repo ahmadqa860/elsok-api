@@ -19,6 +19,7 @@ class CreateProfilesTable extends Migration
             $table->integer('identity');
             $table->string('name');
             $table->integer('mobile');
+            $table->integer('citie_id');
             $table->string('address');
             $table->timestamps();
 

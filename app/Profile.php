@@ -14,6 +14,7 @@ class Profile extends Model
         $profile->identity = $request['identity'];
         $profile->name = $request['name'];
         $profile->mobile = $request['mobile'];
+        $profile->city_id = $request['city_id'];
         $profile->address = $request['address'];
         $profile->save();
 
